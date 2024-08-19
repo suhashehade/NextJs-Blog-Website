@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  background-color: #9e3838;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px 0px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+}

@@ -1,0 +1,99 @@
+:root {
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --textColor: #000;
+  --bg: #fff;
+  --bgSoft: #f0f0f0;
+  --softText: #626262;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--text));
+  background: rgb(var(--bg));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg);
+  color: var(--textColor);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.wrapper {
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* @media screen and (max-width: 1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+} */
+
+/* @media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 475px;
+  }
+}
+
+.ql-container {
+  font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: #b3b3b1;
+}

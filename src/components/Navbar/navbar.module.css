@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.social {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  flex: 2;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .social {
+    display: none;
+  }
+  .logo {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 701px) {
+  .social {
+    display: none;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}

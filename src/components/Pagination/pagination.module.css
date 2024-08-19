@@ -1,0 +1,17 @@
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background-color: #9e3838;
+  padding: 10px 20px;
+  color: white;
+}
+
+.button:disabled{
+  background-color: #9e3838a4;
+}
